@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "blue-design": ["components/index.ts"],
+      "blue-design/esm/*": ["components/*"],
+      "blue-design/lib/*": ["components/*"]
+    },
     "target": "esnext",
     "module": "commonjs",
     "jsx": "react",
