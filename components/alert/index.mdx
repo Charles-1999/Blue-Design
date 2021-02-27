@@ -1,0 +1,33 @@
+---
+name: Alert 警告提示
+route: /Alert
+menu: 反馈
+---
+
+import { DisplayBox } from '../../doc-comps';
+
+import BasicDemo from './demo/basic';
+import BasicDemoCode from '!raw-loader!./demo/basic.tsx';
+
+import KindDemo from './demo/kind';
+import KindDemoCode from '!raw-loader!./demo/kind.tsx';
+
+
+# Alert 告警提示
+
+告警提示，展示需要关注的信息。
+
+## 代码演示
+
+<DisplayBox code={BasicDemoCode} title='基本' desc='最简单的用法，适用于简短的警告提示。'>
+  <BasicDemo />
+</DisplayBox>
+
+<DisplayBox code={KindDemoCode} title='四种样式' desc='共有四种样式 success、info、warning、error。'>
+  <KindDemo />
+</DisplayBox>
+
+## API
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | ---------------------------------- | ------ |
+| kind | 指定警告提示的样式，有四种选择 `success`、`info`、`warning`、`error` | string | 'info' |

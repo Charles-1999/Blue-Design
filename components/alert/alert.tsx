@@ -7,8 +7,8 @@ const prefixCls = 'blue-alert';
 
 const kinds: KindMap = {
   info: '#5352ED',
-  positive: '#2ED573',
-  negative: '#FF4757',
+  success: '#2ED573',
+  error: '#FF4757',
   warning: '#FFA502',
 }
 
@@ -25,7 +25,7 @@ const Alert: React.FC<AlertProps> = ({ children, kind = 'info', ...rest}) => (
 )
 
 Alert.propTypes = {
-  kind: t.oneOf(['info', 'positive', 'negative', 'warning']),
+  kind: t.oneOf(['info', 'success', 'error', 'warning']),
 };
 
 export default Alert;
