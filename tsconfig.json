@@ -18,5 +18,5 @@
     "resolveJsonModule": true
   },
   "include": ["components", "global.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "components/**/demo", "components/**/__tests__", "lib", "esm"]
 }
