@@ -5,10 +5,7 @@
   "main": "lib/index.js",
   "module": "esm/index.js",
   "typings": "lib/index.d.ts",
-  "files": [
-    "lib",
-    "esm"
-  ],
+  "files": ["esm"],
   "np": {
     "yarn": false,
     "contents": [
@@ -17,11 +14,8 @@
     ]
   },
   "scripts": {
-    "dev": "docz dev",
-    "start": "npm run dev",
     "build:types": "tsc -p tsconfig.build.json && cp -r lib esm",
     "build:doc": "rimraf doc-site && docz build",
-    "preview:doc": "docz serve",
     "commit": "git-cz",
     "clean": "rimraf lib esm dist",
     "build": "npm run clean && npm run build:types && gulp",
@@ -86,7 +80,6 @@
     "@umijs/fabric": "^2.5.6",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
-    "docz": "^2.3.1",
     "gatsby-plugin-less": "^4.7.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
