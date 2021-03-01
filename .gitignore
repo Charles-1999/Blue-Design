@@ -1,3 +1,5 @@
 node_modules
 esm
 lib
+.docz
+doczrc.js
